@@ -5,6 +5,7 @@
     --input-bg: #ffffff;
     --btn-bg: #e0e0e0;
     --btn-hover: #d0d0d0;
+    --error-color: #d32f2f;
 }
 
 [data-theme="dark"] {
@@ -14,6 +15,7 @@
     --input-bg: #1e1e1e;
     --btn-bg: #333333;
     --btn-hover: #444444;
+    --error-color: #ff5252;
 }
 
 body {
@@ -52,25 +54,31 @@ body {
     margin-top: 40px;
 }
 
+.grupo-input {
+    margin-bottom: 15px;
+}
+
 .input-padrao {
     width: 100%;
     padding: 8px;
-    margin-bottom: 10px;
     box-sizing: border-box;
     background-color: var(--input-bg);
     color: var(--text-color);
     border: 1px solid var(--border-color);
     border-radius: 4px;
+    transition: border-color 0.2s;
+}
+
+.input-padrao.invalido {
+    border-color: var(--error-color);
 }
 
 .container-senha {
     position: relative;
     width: 100%;
-    margin-bottom: 10px;
 }
 
 .container-senha .input-padrao {
-    margin-bottom: 0;
     padding-right: 40px;
 }
 
@@ -98,11 +106,24 @@ body {
     border: 1px solid var(--border-color);
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .btn-entrar:hover {
     background-color: var(--btn-hover);
+}
+
+.erro-msg {
+    display: block;
+    color: var(--error-color);
+    font-size: 12px;
+    margin-top: 4px;
+    min-height: 14px; 
+    visibility: hidden; 
+}
+
+.erro-msg.ativo {
+    visibility: visible;
 }
 
 .container-range {
