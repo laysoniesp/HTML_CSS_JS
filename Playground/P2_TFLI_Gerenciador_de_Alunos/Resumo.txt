@@ -1,0 +1,44 @@
+PROJETO: Gerenciador de Alunos
+
+1. Descrição Geral
+O sistema é uma aplicação web simples que permite gerenciar uma lista de nomes (alunos). Ele foi construído utilizando tecnologias puras (HTML5, CSS3 e JavaScript Vanilla), sem a dependência de frameworks externos, focando em manipulação de DOM e lógica de arrays.
+
+2. Funcionalidades Principais
+
+Cadastro: Adiciona um nome ao array e atualiza a tela instantaneamente.
+
+Remoção: Remove o último nome da lista (LIFO - Last In, First Out).
+
+Inversão: Inverte a ordem atual dos alunos cadastrados.
+
+Formatação Automática: Transforma o texto em maiúsculas assim que o usuário termina de digitar.
+
+3. Recursos Técnicos Utilizados (Checklist de Requisitos)
+O projeto cumpre 100% das solicitações da imagem, conforme detalhado abaixo:
+
+Interface (Item 1): Criada com input, botões e div de exibição.
+
+Armazenamento (Item 2): Utiliza um Array global alunos.
+
+Funções Obrigatórias (Item 3): Implementadas as funções adicionarAluno, removerAluno, inverterLista e mostrarLista.
+
+Métodos de Array (Item 4): Uso de .push() para adicionar, .pop() para remover, .reverse() para inverter e .join() para formatar a exibição.
+
+Eventos (Item 5): Aplicados onclick nos botões e onchange no campo de texto.
+
+Interação Inicial (Item 6): Uso de window.onload com prompt para capturar o nome do usuário e exibir boas-vindas.
+
+DOM (Item 7): Manipulação completa via getElementById, alteração de innerHTML, captura de value e alteração de style.
+
+Validação (Item 8): Bloqueio de inserção de valores vazios com um alerta de erro.
+
+4. Desafios Extras Concluídos
+
+Cor Dinâmica: Função para alternar a cor da fonte da lista entre preto e azul.
+
+Botão Ligar/Desligar: Altera o innerHTML do botão, escurece o fundo e desativa o painel, simulando um sistema desligado.
+
+Feedback Visual: Implementação de setTimeout com arrow function para exibir mensagens temporárias de confirmação ao usuário (ex: "Aluno adicionado").
+
+5. Conclusão
+O código foi estruturado de forma modular e limpa, facilitando a manutenção e a explicação lógica de cada etapa do processo de manipulação de dados no navegador.
