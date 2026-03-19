@@ -1,0 +1,123 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #121212;
+    --border-color: #cccccc;
+    --input-bg: #ffffff;
+    --btn-bg: #e0e0e0;
+    --btn-hover: #d0d0d0;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --border-color: #555555;
+    --input-bg: #1e1e1e;
+    --btn-bg: #333333;
+    --btn-hover: #444444;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-tema {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.btn-tema:hover {
+    background-color: var(--btn-bg);
+}
+
+.container-login {
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    width: 250px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.input-padrao {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.container-senha {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container-senha .input-padrao {
+    margin-bottom: 0;
+    padding-right: 40px;
+}
+
+.btn-olho {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.btn-entrar {
+    width: 100%;
+    padding: 8px;
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-entrar:hover {
+    background-color: var(--btn-hover);
+}
+
+.container-range {
+    margin-top: 20px;
+}
+
+.controle-range {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+#valorRange {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
